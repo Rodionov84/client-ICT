@@ -28,7 +28,7 @@ export function ExcelDownloadPage({ preloaderCssClass, setPreloaderCssClass }) {
     const xhr = new XMLHttpRequest();
     sendBodyFile.append("sampleFile", file);
 
-    xhr.open("POST", "http://localhost:3001/upload");
+    xhr.open("POST", "http://80.78.248.241:3001/upload");
     xhr.send(sendBodyFile);
     xhr.onload = () => {
       if (xhr.status === 422) {
