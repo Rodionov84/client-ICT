@@ -30,7 +30,7 @@ export function Wrap() {
 
   const getStatements = async () => {
     try {
-      const response = await fetch("http://localhost:3001/statements", {
+      const response = await fetch("http://www.react-js.site:3001/statements", {
         method: 'GET',
       });
       await response.json().then(res => setStatements(res.statements_json));
